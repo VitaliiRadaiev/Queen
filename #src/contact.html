@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "Rozmarin"
+})
+
+<body>
+	<!-- == WRAPPER ================== -->
+	<div class="wrapper contact _padding-top">
+		<!-- == HEADER ================== -->
+		@@include('blocks/header/_header.html',{})
+		<!-- == // HEADER ================== -->
+
+		<!-- == PAGE CONTENT ================== -->
+		<main class="page">
+            <!-- == HERO ================== -->
+			@@include('blocks/hero/_hero.html',{
+			"title": 'Contact us',
+			"breadcrumb": ['Home'],
+			"breadcrumbLast": 'Contact us',
+            })
+            <!-- == // HERO ================== -->
+
+            <section class="contact-info">
+                <div class="container">
+                    <div class="contact-info__body">
+                        <div class="contact-info__column-1">
+                            <div class="contact-info__trigger-cards">
+                                <a href="#tab-1" class="contact-info__card active">
+                                    <div class="contact-info__card-title title-5">Днепр</div>
+                                    <div class="contact-info__card-tel">+38 (095) 804-61-52</div>
+                                    <div class="contact-info__card-adress">
+                                        <img class="img-svg" src="img/icons/point.svg" alt="">
+                                        пр. Гагарина, 90
+                                    </div>
+                                </a>
+                                <a href="#tab-2" class="contact-info__card">
+                                    <div class="contact-info__card-title title-5">Кропивницкий</div>
+                                    <div class="contact-info__card-tel">+38 (095) 804-61-52</div>
+                                    <div class="contact-info__card-adress">
+                                        <img src="" alt="">
+                                        <img class="img-svg" src="img/icons/point.svg" alt="">
+                                        ул.50 лет Октября, 32 / 25
+                                    </div>
+                                </a>
+                                <a href="#tab-3" class="contact-info__card">
+                                    <div class="contact-info__card-title title-5">Днепр</div>
+                                    <div class="contact-info__card-tel">+38 (095) 804-61-52</div>
+                                    <div class="contact-info__card-adress">
+                                        <img src="" alt="">
+                                        <img class="img-svg" src="img/icons/point.svg" alt="">
+                                        пр. Гагарина, 90
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-info__column-2">
+                            <div id="tab-1" class="contact-info__tab active">
+                                <div class="contact-info__map" data-lat="48.42739839507373" data-lng="35.03313966984865"></div>
+                                <div class="contact-info__img ibg">
+                                    <img src="https://idealnapara.ua/wp-content/uploads/2018/06/contact-2-1.png" alt="">
+                                </div>
+                                <div class="contact-info__img ibg">
+                                    <img src="https://idealnapara.ua/wp-content/uploads/2018/06/contact-1-1.png" alt="">
+                                </div>
+                            </div>
+                            <div id="tab-2" class="contact-info__tab">
+                                <div class="contact-info__map" data-lat="48.50160553981371" data-lng="32.25186271402791"></div>
+                                <div class="contact-info__img ibg">
+                                    <img src="https://idealnapara.ua/wp-content/uploads/2018/06/contact-1-1.png" alt="">
+                                </div>
+                                <div class="contact-info__img ibg">
+                                    <img src="https://idealnapara.ua/wp-content/uploads/2018/06/contact-2-1.png" alt="">
+                                </div>
+                            </div>
+                            <div id="tab-3" class="contact-info__tab">
+                                <div class="contact-info__map" data-lat="48.42739839507373" data-lng="35.03313966984865"></div>
+                                <div class="contact-info__img ibg">
+                                    <img src="https://idealnapara.ua/wp-content/uploads/2018/06/contact-2-1.png" alt="">
+                                </div>
+                                <div class="contact-info__img ibg">
+                                    <img src="https://idealnapara.ua/wp-content/uploads/2018/06/contact-1-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- == FORM BLOCK CONTACT ================== -->
+            <section class="contact__form-block form-block-contact">
+                <div class="container">
+                    <div class="form-block-contact__body">
+                        <div class="form-block-contact__column-1">
+                            @@include('blocks/forms/form-send-message/_form-send-message.html',{
+                                "suptitle": 'be in touch',
+                                'title': "Send us a message",
+                                'text': "We’re always ready to help and make your wedding better.",
+                                 "star": false,  
+                                 'button': "submit",
+                                })
+                        </div>
+                        <div class="form-block-contact__column-2">
+                            @@include('blocks/card-timer/_card-timer.html' {})
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- == // FORM BLOCK CONTACT ================== -->
+
+		</main>
+		<!-- == // PAGE CONTENT ================== -->
+
+		<!-- == FOOTER ================== -->
+		@@include('blocks/footer/_footer.html',{})
+		<!-- == // FOOTER ================== -->
+	</div>
+	<!-- == // WRAPPER ================== -->
+	@@include('blocks/popup/_popup.html',{})
+    @@include('_js.html',{})
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+</body>
+
+</html>

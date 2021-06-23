@@ -1,0 +1,53 @@
+.head {
+	text-align: center;
+	margin: 0 auto 30px;
+
+	&__suptitle {
+		&.suptitle {
+			font-weight: bold;
+			font-size: 80px;
+			line-height: 1.21em;
+			text-transform: uppercase;
+			color: rgba(28, 41, 56, 0.03);
+			margin-bottom: -0.34em;
+
+			@media (max-width: $md2+px) {
+				font-size: 60px;
+			}
+			@media (max-width: $md3+px) {
+				font-size: 40px;
+			}
+			@media (max-width: $md4+px) {
+				font-size: 26px;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 0.7em;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__subtitle {
+		font-family: $seconFontFamily;
+		font-size: 22px;
+		line-height: 130%;
+		color: $textColor;
+		margin-bottom: 1.36em;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__text {
+		max-width: 520px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.suptitle {
+}
+.title-2 {
+}
+.text {
+}

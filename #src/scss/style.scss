@@ -85,7 +85,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	color: #000;
 	font-size: 1.6rem;
-	background: #F3F3F3;
+	background: #f3f3f3;
 	opacity: 0;
 	transition: opacity 0.8s ease;
 
@@ -275,11 +275,9 @@ main.page {
 }
 
 .title-5 {
-	font-family: $seconFontFamily;
-	font-size: 24px;
-	line-height: 120%;
-	text-transform: capitalize;
-	color: $titleColor;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 1.22222em;
 
 	@media (max-width: 575px) {
 		font-size: 20px;
@@ -344,7 +342,7 @@ main.page {
 	}
 
 	@media (max-width: 575px) {
-		font-size: 9px;
+		font-size: 14px;
 	}
 }
 
@@ -377,20 +375,21 @@ button.btn-default {
 // === and btn ========================================================================
 
 .input {
-	min-height: 55px;
+	min-height: 50px;
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid rgba($textColor, 0.2);
+	background-color: #fff;
 	width: 100%;
-	background: transparent;
-
-	&:focus {
-		border-bottom: 1px solid rgba($textColor, 0.8);
-	}
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	padding: 10px 25px;
 
 	&::placeholder {
-		font-size: 14px;
-		line-height: 170%;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+
 		color: $grey;
 	}
 }

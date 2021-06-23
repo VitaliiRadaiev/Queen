@@ -1,16 +1,16 @@
 <section class="testimonials-slider _parallax">
-	<div class="testimonials-slider__decor layer" data-depth="0.15">
-		<img src="img/photo/decor7.png" alt="flowers">
+	<div class="container">
+		<div class="testimonials-slider__decor layer" data-depth="0.15">
+			<img src="img/photo/decor7.png" alt="flowers">
+		</div>
 	</div>
-
 	<div class="container">
 		@@include('../head/_head.html',{
 			"parentClass": 'testimonials-slider__head',
 			"suptitle": {
-				"left": 'they',
-				"right": 'say'
+				"left": 'Они говорят',
 			},
-			"title": 'testimonials',
+			"title": 'Отзывы',
 			"subtitle": {
 				"is": false,
 				"text": '',
@@ -26,18 +26,18 @@
 	    			<div class="testimonials-slider__item swiper-slide">
 	    				<div class="testimonials-slider__photo ibg">
 	    					<span>
-	    						<img src="img/photo/avatar.png" alt="phtoto">
+	    						<img src="img/photo/avatar.jpg" alt="phtoto">
 	    					</span>
 	    				</div>
-	    				<div class="testimonials-slider__name">Milena Purcle</div>
+	    				<div class="testimonials-slider__name">Анастасия Бойцова</div>
 	    				<div class="testimonials-slider__text">
-	    					I had the best wedding I have ever seen. Everything was very beautiful: the flowers, the accsessories, the decorations. Also everyone was affected with my amazing dress. Thank you so much!
+	    					У меня была лучшая свадьба, я была неотразима. Всебыло очень красиво: цветы, аксессуары, украшения, особенно торт. Такеж всез поразило мое изумительное платье. Болшое спасибо!
 	    				</div>
 	    			</div>
 	    			<div class="testimonials-slider__item swiper-slide">
 	    				<div class="testimonials-slider__photo ibg">
 	    					<span>
-	    						<img src="img/photo/avatar.png" alt="phtoto">
+	    						<img src="img/photo/avatar.jpg" alt="phtoto">
 	    					</span> 
 	    				</div>
 	    				<div class="testimonials-slider__name">Milena Purcle</div>
@@ -49,7 +49,7 @@
 	    			<div class="testimonials-slider__item swiper-slide">
 	    				<div class="testimonials-slider__photo ibg">
 	    					<span>
-	    						<img src="img/photo/avatar.png" alt="phtoto">
+	    						<img src="img/photo/avatar.jpg" alt="phtoto">
 	    					</span>
 	    				</div>
 	    				<div class="testimonials-slider__name">Milena Purcle</div>
@@ -59,18 +59,20 @@
 	    			</div>
 
 	    		</div>
-	    		<div class="testimonials-slider__pagination slider-pagination"></div>
 	    	</div>
-	    	<div class="testimonials-slider__btn-wrap">
-	    		<div class="testimonials-slider__btn-prev btn-prev">
-	    			<span><img src="img/icons/Arrow-left.svg" alt="arrow"></span>
-	    			prev
-	    			<span><img src="img/icons/Arrow-right.svg" alt="arrow"></span>
-	    		</div>
-	    		<div class="testimonials-slider__btn-next btn-next">
-	    			next <span><img src="img/icons/Arrow-right.svg" alt="arrow"></span>
-	    		</div>
-	    	</div>
+			<div class="promo-slider__btn-prev btn-prev" data-da="testimonials-slider__wrap,first,991.98">
+				<span><img  src="img/icons/Arrow-left.svg" alt="arrow"></span>
+			</div>
+			<div class="promo-slider__btn-next btn-next" data-da="testimonials-slider__wrap,last,991.98">
+				<span><img  src="img/icons/Arrow-right.svg" alt="arrow"></span>
+			</div>
+			<div class="promo-slider__control">
+				<div class="promo-slider__btn-wrap testimonials-slider__wrap">
+					
+					<div class="promo-slider__pagination slider-pagination"></div>
+
+				</div>
+			</div>
 	    </div>
 	</div>
 </section>

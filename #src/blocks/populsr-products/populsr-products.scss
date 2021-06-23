@@ -1,64 +1,78 @@
 .popular-products {
 	text-align: center;
-	margin-bottom: 150px;
+	margin-bottom: 90px;
 	position: relative;
+	padding-top: 23px;
+	padding-bottom: 67px;
 
 	@media (max-width: $md3+px) {
 		margin-bottom: 70px;
+		padding-bottom: 30px;
+	}
+
+	& > .container {
+		position: relative;
+	}
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 50%;
+		background-color: #fff;
+		z-index: -2;
+		width: calc(100% - 70px);
+		height: 100%;
+		transform: translateX(-50%);
+		max-width: 1041px;
+
+		@media (max-width: $md3+px) {
+			width: calc(100% - 50px);
+		}
 	}
 
 	&__decor {
-		&_1, &_2 {
+		&_1 {
 			position: absolute;
+			width: 593px;
+			height: 630px;
+			z-index: -1;
+			top: 63px;
+			right: 0;
 
 			& img {
-				object-fit: contain;
 				width: 100%;
 				height: auto;
 			}
 		}
-
-		&_1 {
-			width: 324px;
-			height: 507px;
-			z-index: -1;
-			top: 0;
-			right: 0;
-
-		}
-		&_2 {
-			width: 203px;
-			height: 381px;
-			z-index: -1;
-			bottom: 0;
-			left: -30px;
-		}
 	}
 
 	&__head {
-		margin-bottom: 40px;
+		margin-bottom: 24px;
 
 		@media (max-width: $md3+px) {
 			margin-bottom: 20px;
 		}
+
+
 	}
 	&__nav {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin-bottom: 30px;
+		margin-bottom: 41px;
 
 		@media (max-width: $md3+px) {
 			overflow-x: auto;
 			flex-wrap: nowrap;
-			margin:0 -15px 20px;
+			margin: 0 -15px 20px;
 			justify-content: flex-start;
 			padding: 0 15px;
 		}
 
 		& > li {
 			&:not(:last-child) {
-				margin-right: 2.7%;
+				margin-right: 4.6%;
 			}
 
 			@media (max-width: $md3+px) {
@@ -74,48 +88,48 @@
 	}
 	&__link {
 		display: inline-block;
-		font-size: 14px;
-		line-height: 170%;
-		text-transform: capitalize;
-		color: rgba($titleColor, 0.5);
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.22em;
+		color: $textColor;
 		padding: 5px 0 2px;
-		transition: all .2s ease;
+		transition: all 0.2s ease;
 		position: relative;
 		white-space: nowrap;
 
-
 		&.active {
-			color: $titleColor;
+			color: $mainColor;
 
 			&:before {
-				width: 100%;
-				background: $titleColor;
+				width: calc(100% + 16px);
+				background: $mainColor;
 			}
 		}
 
 		&:before {
 			position: absolute;
-			content: '';
+			content: "";
 			left: 50%;
 			bottom: 0;
 			width: 0%;
-			height: 2px;
-			background: rgba($titleColor, 0.5);
+			height: 1px;
+			background: $textColor;
 			transform: translateX(-50%);
-			transition: all .2s ease;
+			transition: all 0.2s ease;
 		}
 
 		@media (min-width: 992px) {
 			&:hover {
-				color: $titleColor;
+				&:not(.active) {
+					color: $titleColor;
 
-				&:before {
-					width: 100%;
-					background: $titleColor;
+					&:before {
+						width: calc(100% + 16px);
+						background: $titleColor;
+					}
 				}
 			}
 		}
-
 	}
 
 	@keyframes fadeInAnim {
@@ -128,11 +142,7 @@
 	}
 
 	&__tabs-content {
-		display: none;
-		&.active {
-			display: block;
-			animation: fadeInAnim 0.3s linear;
-		}
+
 	}
 
 	&__list {
@@ -150,19 +160,29 @@
 		& > li {
 			flex: 0 1 33.333%;
 			padding: 0 15px;
-			margin-bottom: 30px;
+			margin-bottom: 32px;
 
 			@media (max-width: $md2+px) {
 				padding: 0 7.5px;
 			}
 
 			@media (max-width: $md3+px) {
-				flex: 0 1 50%;			
+				flex: 0 1 50%;
 			}
 
 			@media (max-width: $md4+px) {
-				flex: 0 1 100%;			
+				flex: 0 1 100%;
 			}
+
+			@media (min-width: 768px) {
+				&:nth-child(3n -1) {
+					transform: translateY(40px);
+				}
+				&:nth-child(3n) {
+					transform: translateY(16px);
+				}
+			}
+
 		}
 	}
 }

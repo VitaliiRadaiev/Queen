@@ -1,28 +1,24 @@
 // ==  slider ==========================================================================
 {
-	let slider = document.querySelector('.testimonials-slider__body .swiper-container');
+	let slider = document.querySelector('.testimonials-slider__body');
 	if(slider) {
-		let promoSliderContent = new Swiper(slider, {
+		let promoSliderContent = new Swiper(slider.querySelector('.swiper-container'), {
 			slidesPerView: 1,
+			spaceBetween: 40,
 			loop: true,
 			speed: 600,
 			autoHeight: true,
 			pagination: {
-			    el: document.querySelector('.testimonials-slider__pagination'),
+			    el: slider.querySelector('.slider-pagination'),
 			     clickable: true,
-			     renderBullet: function(index, className) {
-			     	let num;
-			     	if((index + 1) >= 10) {
-			     	    num = index + '.';
-			     	} else {
-			     		num = '0' + (index + 1) + '.'; 
-			     	}
-			     	return '<span class="'+ className +'"> ' + num + '</span>';
-			     }
+				 type: 'fraction',
+				 renderFraction: function (currentClass, totalClass) {
+					 return '<span class="current">0<span class="' + currentClass + '"></span></span>/<span class="total">0<span class="' + totalClass + '"></span></span>';
+				 }
 			  },
 			 navigation: {
-			 	nextEl: '.testimonials-slider__btn-next',
-			 	prevEl: '.testimonials-slider__btn-prev',
+			 	nextEl: slider.querySelector('.promo-slider__btn-next'),
+			 	prevEl: slider.querySelector('.promo-slider__btn-prev'),
 			 }, 
 		})
 

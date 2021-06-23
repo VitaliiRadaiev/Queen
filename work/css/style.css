@@ -9436,6 +9436,10 @@ button.btn-default {
     display: block !important;
   }
 
+  .header__menu-list > li:first-child {
+    display: none;
+  }
+
   .header__menu-list > li:hover .header__menu-sublist {
     display: block;
   }

@@ -145,6 +145,9 @@
 			position: relative;
 
 			@media (min-width: 992px) {
+				&:first-child {
+					display: none;
+				}
 				&:hover {
 					& .header__menu-sublist {
 						display: block;

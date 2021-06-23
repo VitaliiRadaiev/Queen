@@ -121,11 +121,11 @@
 		@media (min-width: 992px) {
 			&:hover {
 				&:not(.active) {
-					color: $titleColor;
+					color: $hoverLinkColor;
 
 					&:before {
 						width: calc(100% + 16px);
-						background: $titleColor;
+						background: $hoverLinkColor;
 					}
 				}
 			}

@@ -3539,7 +3539,7 @@ button.btn-default {
 }
 
 .top-product-page__btn-add-to-card:active {
-  background: #ce2323;
+  background: #a54179;
 }
 
 .top-product-page__btn-like {
@@ -6408,7 +6408,7 @@ button.btn-default {
 }
 
 .header__top-column a:hover {
-  color: #CD3F3E;
+  color: #a54179;
 }
 
 .header__top-column:first-child {
@@ -6469,8 +6469,8 @@ button.btn-default {
 .header__menu-sublist {
   display: none;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 10px rgba(205, 63, 62, 0.3);
-          box-shadow: 0px 0px 10px rgba(205, 63, 62, 0.3);
+  -webkit-box-shadow: 0px 0px 10px rgba(165, 65, 121, 0.3);
+          box-shadow: 0px 0px 10px rgba(165, 65, 121, 0.3);
   position: absolute;
   top: 100%;
   left: 0;
@@ -6525,7 +6525,7 @@ button.btn-default {
 }
 
 .header__menu-sublink:hover {
-  background: rgba(205, 63, 62, 0.3);
+  background: rgba(165, 65, 121, 0.3);
 }
 
 .header__logo {
@@ -6571,7 +6571,7 @@ button.btn-default {
 }
 
 .header__action-link:hover {
-  background: rgba(205, 63, 62, 0.3);
+  background: rgba(165, 65, 121, 0.3);
 }
 
 .header__action-icon-wrap {
@@ -6725,7 +6725,7 @@ button.btn-default {
 
 .footer__column a:hover,
 .footer__column a.link:hover {
-  color: #ce2323;
+  color: #a54179;
 }
 
 .footer__column_1 {
@@ -8109,6 +8109,7 @@ button.btn-default {
   width: 54.5%;
   border: 1px solid #CD3F3E;
   z-index: 2;
+  pointer-events: none;
 }
 
 .get-your-gift-block__img {
@@ -9309,15 +9310,17 @@ button.btn-default {
   }
 
   .btn-default:hover {
-    background: rgba(205, 63, 62, 0.1);
+    background: rgba(165, 65, 121, 0.1);
+    border-color: #a54179;
+    color: #a54179;
   }
 
   .btn-submit:hover {
-    background: #ce2323;
+    background: #a54179;
   }
 
   .text-content a:hover {
-    color: #ce2323;
+    color: #a54179;
   }
 
   .text-block-about__column_1 {
@@ -9355,7 +9358,7 @@ button.btn-default {
   }
 
   .top-product-page__btn-add-to-card:hover {
-    background: #ce2323;
+    background: #a54179;
   }
 
   .top-product-page__btn-like.added:hover {
@@ -9418,11 +9421,11 @@ button.btn-default {
   }
 
   .form-log-in__forgot-link:hover {
-    color: #ce2323;
+    color: #a54179;
   }
 
   .form-registr__forgot-link:hover {
-    color: #ce2323;
+    color: #a54179;
   }
 
   .header__burger {
@@ -9438,7 +9441,7 @@ button.btn-default {
   }
 
   .header__menu-link:hover {
-    background: rgba(205, 63, 62, 0.3);
+    background: rgba(165, 65, 121, 0.3);
   }
 
   .header__logo {
@@ -9450,7 +9453,7 @@ button.btn-default {
   }
 
   .footer__form-submit:hover {
-    background-color: #ce2323;
+    background-color: #a54179;
   }
 
   .footer__form-submit:hover > span {
@@ -9460,7 +9463,7 @@ button.btn-default {
   }
 
   .footer__social > li a:hover svg path {
-    fill: #ce2323;
+    fill: #a54179;
   }
 
   .form-search__label:hover {
@@ -9479,11 +9482,11 @@ button.btn-default {
   }
 
   .btn-prev:hover {
-    background: rgba(205, 63, 62, 0.1);
+    background: rgba(165, 65, 121, 0.1);
   }
 
   .btn-next:hover {
-    background: rgba(205, 63, 62, 0.1);
+    background: rgba(165, 65, 121, 0.1);
   }
 
   .category-card__content span.btn-default:hover {
@@ -9495,12 +9498,12 @@ button.btn-default {
   }
 
   .popular-products__link:hover:not(.active) {
-    color: #1C2938;
+    color: #a54179;
   }
 
   .popular-products__link:hover:not(.active):before {
     width: calc(100% + 16px);
-    background: #1C2938;
+    background: #a54179;
   }
 
   .card__img:hover:before {
@@ -9508,7 +9511,7 @@ button.btn-default {
   }
 
   .card__like:hover svg path {
-    stroke: #CD3F3E;
+    stroke: #a54179;
   }
 
   .advantages__text a:hover {
@@ -9901,8 +9904,8 @@ button.btn-default {
 
   .header__menu-sublist {
     position: static;
-    -webkit-box-shadow: 0px 6px 10px -3px rgba(205, 63, 62, 0.3);
-            box-shadow: 0px 6px 10px -3px rgba(205, 63, 62, 0.3);
+    -webkit-box-shadow: 0px 6px 10px -3px rgba(165, 65, 121, 0.3);
+            box-shadow: 0px 6px 10px -3px rgba(165, 65, 121, 0.3);
     margin-bottom: 20px;
     background: transparent;
   }

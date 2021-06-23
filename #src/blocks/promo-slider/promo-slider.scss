@@ -257,7 +257,7 @@
 
 	@media (min-width: 992px) {
 		&:hover {
-			background: rgba($mainColor, 0.1);
+			background: rgba($hoverLinkColor, 0.1);
 		}
 	}
 
@@ -288,7 +288,7 @@
 
 	@media (min-width: 992px) {
 		&:hover {
-			background: rgba($mainColor, 0.1);
+			background: rgba($hoverLinkColor, 0.1);
 		}
 	}
 

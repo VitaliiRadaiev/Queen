@@ -106,7 +106,7 @@
 			&:hover {
 				& svg {
 					& path {
-						stroke: $mainColor;
+						stroke: $hoverLinkColor;
 					}
 				}
 			}

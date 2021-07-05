@@ -10,7 +10,7 @@
 
 	&__btn {}
 	&__btn-left {
-		padding-right: 31px;
+		
 	}
 	&__btn-right {
 	}
@@ -32,7 +32,7 @@
 			&.active {
 				& > a {
 					font-size: 20px;
-					color: rgba($titleColor, 1);
+					color: rgba($mainColor, 1);
 				}
 			}
 
@@ -44,12 +44,12 @@
 				font-weight: 500;
 				font-size: 14px;
 				line-height: 24px;
-				color: rgba($titleColor, 0.3);
+				color: rgba($mainColor, 0.3);
 				opacity: 1;
 				display: inline-block;
 
 				&:hover {
-					color: rgba($titleColor, 1);
+					color: rgba($mainColor, 1);
 				}
 			}
 

@@ -38,14 +38,18 @@
         @media (max-width: $md3+px) {
             margin-bottom: 70px;
         }
+
+        & > .container {
+            position: relative;
+        }
     }
 
     &__decor {
         position: absolute;
         top: 100px;
-        right: 70px;
-        width: 186px;
-        height: 343px;
+        right: -150px;
+        width: 586px;
+        height: 543px;
         z-index: -1;
         
         & img {
@@ -90,12 +94,13 @@
         flex: 0 1 auto;
         align-items: center;
         margin-bottom: 15px;
+        position: relative;
         
         &:not(:last-child) {
             margin-right: 8em;
 
             @media (max-width: $md3+px) {
-                margin-right: 2em;
+                margin-right: 4em;
             }
         }
 
@@ -105,8 +110,11 @@
     }
 
     &__icon {
-        flex: 0 0 4em;
-        margin-right: 2em;
+        position: absolute;
+        width: 6em;
+        padding: 0.5em;
+        background-color:#f3f3f3;
+        transform: translateX(-50%);
 
         & img {
             width: 100%;
@@ -120,6 +128,12 @@
         text-transform: capitalize;
         color: $titleColor;
         margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em 2em 0.5em 2em;
+        min-height: 4em;
+        border: 1px solid $mainColor;
 
         @media (max-width: $md3+px) {
             margin-right: 0em;
@@ -284,15 +298,14 @@
             margin-left: 0;
             margin-right: 0;
             max-width: 653px;
+
+            & > * {
+                margin-left: 0;
+                max-width: none;
+            }
         }
 
-        & .head__suptitle {
-            margin-left: -0.43em;
-        }
 
-        & .head__title  {
-            max-width: 500px;
-        }
 
 
     }

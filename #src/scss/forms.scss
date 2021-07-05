@@ -37,33 +37,36 @@
 	&__item {
 		position: relative;
 		font-family: $mainFontFamily;
-		min-width: 294px;
+		
 	}
 	// .select__title
 	&__title {
 		color: $textColor;
 		background-color: #fff;
 		cursor: pointer;
-		@media (max-width: $md2+px) {
-			font-size: 18px;
-		}
+		min-height: 55px;
+		padding: 10px 25px;
+		display: flex;
+		align-items: center;
+		
 	}
 	// .select__value
 	&__value {
+		font-size: 16px;
+		line-height: 19px;
+		font-family: $mainFontFamily;
 		display: flex;
-		font-size: 14px;
-		line-height: 170%;
-		padding: 0px 15px;
-		align-items: center;
 		justify-content: space-between;
-		flex-direction: row-reverse;
+		align-items: center;
+		width: 100%;
+		
 		span {
-			font-family: $mainFontFamily;
+			margin-right: 15px;
 			display: -webkit-box;
 			-webkit-line-clamp: 1;
 			-webkit-box-orient: vertical;
 		}
-		&:before {
+		&:after {
 			content: "+";
 			display: inline-block;
 			transition: all 0.3s ease 0s;
@@ -82,7 +85,7 @@
 		color: #000;
 		display: none;
 		position: absolute;
-		top: 29px;
+		top: 100%;
 		border-radius: 0 0 4px 4px;
 		min-width: 100%;
 		left: 0;

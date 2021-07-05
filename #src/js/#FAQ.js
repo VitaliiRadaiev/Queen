@@ -20,6 +20,10 @@
 		for (let index = 0; index < spollers.length; index++) {
 			const spoller = spollers[index];
 
+            if(spoller.classList.contains('_active')) {
+                _slideDown(spoller.nextElementSibling);
+            }
+
 			spoller.addEventListener("click", function (e) {
 				//e.preventDefault();
 				spoller.classList.toggle('_active');

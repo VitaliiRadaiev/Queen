@@ -386,6 +386,7 @@ button.btn-default {
 	font-size: 16px;
 	line-height: 19px;
 	padding: 10px 25px;
+	border-bottom: 1px solid rgba($textColor, 0.2);
 
 	&::placeholder {
 		font-weight: 500;
@@ -393,6 +394,10 @@ button.btn-default {
 		line-height: 19px;
 
 		color: $grey;
+	}
+
+	&:focus {
+		border-bottom: 1px solid rgba($textColor, 0.8);
 	}
 }
 
@@ -403,6 +408,7 @@ button.btn-default {
 	border-bottom: 1px solid rgba($textColor, 0.2);
 	resize: none;
 	width: 100%;
+	padding: 10px 25px;
 
 	&:focus {
 		border-bottom: 1px solid rgba($textColor, 0.8);

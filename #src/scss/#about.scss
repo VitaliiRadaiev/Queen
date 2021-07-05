@@ -37,12 +37,16 @@
 			max-width: none;
 
 			& .head__suptitle {
-				margin-left: -0.71em;
+				@media (min-width: 992px) {
+					margin-left: -0.4em;
+				}
 			}
 
-			& .head__title{
-				margin-bottom: 0.68em;
+			& > * {
+				margin-left: 0;
+				max-width: none;
 			}
+			
 		}
 	}
 	&__advantages {}

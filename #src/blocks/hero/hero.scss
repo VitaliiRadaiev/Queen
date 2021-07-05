@@ -9,18 +9,32 @@
 	@media (min-width: 576px) {
 		margin-bottom: 100px;
 	}
+
+	& > .container {
+		position: relative;
+	}
+
+
 	&__decor {
 		position: absolute;
 		top: -100px;
-		right: 0;
-		width: 100%;
-		min-width: 1000px;
-		height: auto;
+		left: 0;
+		width: 600px;
+		z-index: 2;
+		pointer-events: none;
 		mix-blend-mode: darken;
+
+		@media (max-width: $md3+px) {
+			top: -200px;
+		}
+
 
 		& img {
 			width: 100%;
 			height: auto;
+			@media (max-width: $md3+px) {
+				object-fit: cover;
+			}
 		}
 	}
 

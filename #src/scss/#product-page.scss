@@ -523,7 +523,15 @@
 
             & > span {
                 transform: rotate(90deg);
-                width: 13px;
+                height: 6px;
+                width: auto;
+                margin: 0 5px;
+                min-width: 10px;
+
+                & img {
+                    height: 100%;
+                    width: auto;
+                }
             }
         }
     }
@@ -596,26 +604,16 @@
         margin-bottom: 50px;
     }
 
-    &__decor_1 {
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        width: 203px;
-        height: 381px;
-        z-index: -1;
-
-        & img {
-            width: 100%;
-        }
-        
+    & .container {
+        position: relative;
     }
 
-    &__decor_2 {
+    &__decor_1 {
         position: absolute;
-        top: 0px;
-        right: 0;
-        width: 228px;
-        height: 443px;
+        top: 100px;
+        left: -150px;
+        width: 503px;
+        height: 581px;
         z-index: -1;
 
         & img {

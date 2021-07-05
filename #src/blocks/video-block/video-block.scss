@@ -2,12 +2,16 @@
 	margin: 50px 0 50px;
 	position: relative;
 
+	& > .container {
+		position: relative;
+	}
+
 	&__decor {
 		position: absolute;
-		top: -40px;
-		right: 0;
+		top: -100px;
+		right: -100px;
 		z-index: -1;
-		width: 229px;
+		width: 529px;
 		height: 544px;
 
 		& img {
@@ -16,7 +20,7 @@
 
 	}
 
-	& .video-block {
+	& .video-block__video-wrap {
 		min-height: 500px;
 
 		@media (max-width: $md3+px) {

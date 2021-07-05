@@ -16,12 +16,16 @@
 		@media (max-width: $md3+px) {
 			margin-bottom: 82px;
 		}
+
+		& > .container {
+			position: relative;
+		}
 	}
 	&__decor {
 		position: absolute;
-		top: 50%;
-		right: 0;
-		width: 229px;
+		top: 400px;
+		right: -200px;
+		width: 529px;
 		height: 544px;
 		z-index: -1;
 

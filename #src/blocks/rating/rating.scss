@@ -12,7 +12,7 @@
 		& .rating__line {
 			font-size: 20px;
 			height: 21px;
-			color: #e4e4e4;
+			color: rgba($mainColor,0.2);
 		}
 
 		& .rating__activeline {
@@ -52,7 +52,7 @@
 	background-size:80px 100%;
 	display: flex;
 	font-size: 12px;
-	color: #FFC107;
+	color: $mainColor;
 	& > span {
 		margin-right: 5px;
 	}
@@ -68,7 +68,7 @@
 	display: flex;
 	font-size: 12px;
 	overflow: hidden;
-	color: #FFC107;
+	color: $mainColor;
 	& > span {
 		margin-right: 5px;
 	}

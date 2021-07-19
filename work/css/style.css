@@ -2380,7 +2380,7 @@ main.page {
   font-weight: 500;
   font-size: 65px;
   line-height: 1.215em;
-  color: #CD3F3E;
+  color: #a54179;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -2454,7 +2454,7 @@ main.page {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22em;
-  color: #CD3F3E;
+  color: #a54179;
   padding: 0.5em 1.5em;
   border: 1px solid #CD3F3E;
   -webkit-transition: all 0.2s ease;
@@ -7327,7 +7327,7 @@ button.btn-default {
   font-weight: 600;
   font-size: 22px;
   line-height: 1.22em;
-  color: #CD3F3E;
+  color: #a54179;
   position: static;
   width: auto;
   -webkit-transform: translateY(-10%);
@@ -7774,7 +7774,7 @@ button.btn-default {
 }
 
 .popular-products__link.active {
-  color: #CD3F3E;
+  color: #a54179;
 }
 
 .popular-products__link.active:before {
@@ -7917,7 +7917,7 @@ button.btn-default {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #CD3F3E;
+  color: #a54179;
   text-align: center;
 }
 
@@ -8547,7 +8547,7 @@ button.btn-default {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  color: #CD3F3E;
+  color: #a54179;
   padding-left: 125px;
   margin-bottom: 8px;
 }

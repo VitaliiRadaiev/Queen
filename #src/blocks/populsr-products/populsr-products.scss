@@ -98,7 +98,7 @@
 		white-space: nowrap;
 
 		&.active {
-			color: $mainColor;
+			color: $textColor2;
 
 			&:before {
 				width: calc(100% + 16px);

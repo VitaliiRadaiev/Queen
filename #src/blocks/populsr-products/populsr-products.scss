@@ -142,7 +142,12 @@
 	}
 
 	&__tabs-content {
+		display: none;
 
+		&.active {
+			display: block;
+			animation: fadeInAnim 0.6s ease;
+		}
 	}
 
 	&__list {

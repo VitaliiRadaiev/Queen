@@ -7818,6 +7818,16 @@ button.btn-default {
   }
 }
 
+.popular-products__tabs-content {
+  display: none;
+}
+
+.popular-products__tabs-content.active {
+  display: block;
+  -webkit-animation: fadeInAnim 0.6s ease;
+          animation: fadeInAnim 0.6s ease;
+}
+
 .popular-products__list {
   display: -webkit-box;
   display: -ms-flexbox;
